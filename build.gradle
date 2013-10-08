@@ -1,0 +1,15 @@
+apply plugin: 'idea'
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.1.6'
+	compile 'joda-time:joda-time:2.3'
+	compile 'org.apache.commons:commons-lang3:3.1'
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+	testCompile 'org.fluttercode.datafactory:datafactory:0.8'
+}
