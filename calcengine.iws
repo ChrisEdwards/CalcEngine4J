@@ -4,21 +4,107 @@
     <bookmark url="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/CalcEngineTest.groovy" line="3" mnemonic="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" name="Default" comment="" />
+    <list default="true" id="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/DomainAssertions.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainClass.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainClassTest.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainModel.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainModelBuilder.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainModelBuilderTest.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainProperty.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainPropertyTest.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainRelationship.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/EqualFunction.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grammar/Expression.g" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grammar/ExpressionLexer.g" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grammar/ExpressionParser.g" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/GreaterThanFunction.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/GreaterThanOrEqualFunction.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/LessThanFunction.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/LessThanOrEqualFunction.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/NotEqualFunction.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/generators/SqlExpressionGenerator.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/generators/SqlExpressionGeneratorTest.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grammar/test_expressions.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grammar/test_predicate_recursion.g" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grammar/test_predicate_recursion_tree.g" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\CalcEngine.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\ExpressionVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\BinaryExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\ChildNotAllowedException.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\ConditionalExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\Expression$_visitChildren_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\Expression.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\FunctionExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\LiteralExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\ValueExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\AddFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\AndFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\BinaryFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\DivideFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\Function$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\Function.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\FunctionRegistry.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\MultiplyFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\NotFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\OrFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\RoundFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\functions\SubtractFunction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\production\calcengine\com\shiloh\calcengine\expressions\utils\ExpressionExtensions.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\CalcEngineTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_$spock_feature_0_0_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_$spock_feature_0_0_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_$spock_feature_0_1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_$spock_feature_0_1_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_$spock_feature_0_2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_$spock_feature_0_2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_spock_feature_0_1_closure3_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_spock_feature_0_1_closure3_closure7_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_spock_feature_0_1_closure3_closure7_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_spock_feature_0_1_closure3_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_spock_feature_0_2_closure5_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest$_spock_feature_0_2_closure5_closure12.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionBuilderTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionTest$SampleExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\ExpressionTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\LiteralNodeTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\NodeVisitorTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\AddFunctionTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\AndFunctionTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\DivideFunctionTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\FunctionRegistryTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\FunctionTestBase$_runFunctionWithParams_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\FunctionTestBase.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\MultiplyFunctionTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\NotFunctionTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\OrFunctionTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\RoundFunctionTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\calcengine\out\test\calcengine\com\shiloh\calcengine\expressions\functions\SubtractFunctionTest.class" afterPath="" />
+      <change type="MOVED" beforePath="C:\Projects\calcengine\src\main\groovy\com\shiloh\calcengine\expressions\utils\ExpressionExtensions.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/ExpressionAssertions.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/BinaryExpression.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/BinaryExpression.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/Expression.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/Expression.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/ExpressionBuilder.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/ExpressionBuilder.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/ExpressionBuilderTest.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/ExpressionBuilderTest.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/FunctionRegistry.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/FunctionRegistry.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calcengine.ipr" afterPath="$PROJECT_DIR$/calcengine.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calcengine.iws" afterPath="$PROJECT_DIR$/calcengine.iws" />
+    </list>
     <ignored path="calcengine.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Node.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381209259654" ignored="false" />
     <file path="/NodeTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381157000261" ignored="false" />
     <file path="/ValueNode.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381124912308" ignored="false" />
-    <file path="/fragment.java" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381185855702" ignored="false" />
-    <file path="/a.dummy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381235249817" ignored="false" />
+    <file path="/fragment.java" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381284231489" ignored="false" />
+    <file path="/a.dummy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381288967252" ignored="false" />
     <file path="/ValueNodeTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381124888539" ignored="false" />
     <file path="/ChildNotAllowedException.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1380947027278" ignored="false" />
     <file path="/FunctionNode.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1380948794390" ignored="false" />
     <file path="/MathFunction.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381131227807" ignored="false" />
     <file path="/AddFunctionTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381126021015" ignored="false" />
     <file path="/AddFunction.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381255136433" ignored="false" />
-    <file path="/Dummy.txt" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381194907386" ignored="false" />
+    <file path="/Dummy.txt" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381941323471" ignored="false" />
     <file path="/LiteralNode.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381125019741" ignored="false" />
     <file path="/LiteralNodeTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381125319146" ignored="false" />
     <file path="/SubtractFunctionTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381180868929" ignored="false" />
@@ -40,16 +126,28 @@
     <file path="/pom.xml" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381195473687" ignored="false" />
     <file path="/NodeVisitor.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381209240511" ignored="false" />
     <file path="/NodeVisitorTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381208954255" ignored="false" />
-    <file path="/ExpressionBuilder.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381238231559" ignored="false" />
-    <file path="/ExpressionBuilderTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381241767677" ignored="false" />
-    <file path="/FunctionRegistry.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381235527484" ignored="false" />
+    <file path="/ExpressionBuilder.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381267630673" ignored="false" />
+    <file path="/ExpressionBuilderTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381814495184" ignored="false" />
+    <file path="/FunctionRegistry.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381265291437" ignored="false" />
     <file path="/FunctionRegistryTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381235038609" ignored="false" />
     <file path="/org.codehaus.groovy.runtime.ExtensionModule" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381240123159" ignored="false" />
-    <file path="/ExpressionExtensions.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381240344769" ignored="false" />
+    <file path="/ExpressionExtensions.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381267832202" ignored="false" />
     <file path="/ConditionalExpression.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381249274033" ignored="false" />
-    <file path="/BinaryExpression.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381249829032" ignored="false" />
+    <file path="/BinaryExpression.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381267705437" ignored="false" />
     <file path="/BinaryFunction.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381255050267" ignored="false" />
     <file path="/OrFunction.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381255780113" ignored="false" />
+    <file path="/ComparatorFunction.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381264084223" ignored="false" />
+    <file path="/SqlExpressionGenerator.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381269747524" ignored="false" />
+    <file path="/SqlExpressionGeneratorTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381269841126" ignored="false" />
+    <file path="/DomainClass.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381280304014" ignored="false" />
+    <file path="/DomainProperty.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381279291162" ignored="false" />
+    <file path="/DomainPropertyTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381288570903" ignored="false" />
+    <file path="/DomainClassTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381288639892" ignored="false" />
+    <file path="/DomainRelationship.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381280830479" ignored="false" />
+    <file path="/DomainModelBuilder.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381804896772" ignored="false" />
+    <file path="/DomainModelBuilderTest.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1382037901611" ignored="false" />
+    <file path="/DomainModel.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381804937176" ignored="false" />
+    <file path="/TypeAssertions.groovy" changelist="8bdcea7d-36cd-4bf0-8215-1aa4bb7234aa" time="1381810967949" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +162,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -100,7 +199,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -112,40 +210,67 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="ExpressionBuilder.groovy" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="DomainProperty.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainProperty.groovy">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="42" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ExpressionBuilder.groovy" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/ExpressionBuilder.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="5" selection-start="334" selection-end="334" vertical-scroll-proportion="0.23192771">
+                <state line="6" column="6" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Function.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/Function.groovy">
+          <file leaf-file-name="DomainClass.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainClass.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="1" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
+                <state line="7" column="58" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FunctionRegistry.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/FunctionRegistry.groovy">
+          <file leaf-file-name="DomainClassTest.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainClassTest.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="5" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+                <state line="44" column="53" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FunctionRegistryTest.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/functions/FunctionRegistryTest.groovy">
+          <file leaf-file-name="DomainPropertyTest.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainPropertyTest.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="17" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+                <state line="10" column="43" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DomainModelBuilderTest.groovy" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainModelBuilderTest.groovy">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="81" column="72" selection-start="2350" selection-end="2350" vertical-scroll-proportion="1.341074">
                   <folding>
-                    <element signature="e#53#84#0" expanded="true" />
+                    <element signature="e#43#106#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FunctionTestBase.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/functions/FunctionTestBase.groovy">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="15" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -153,40 +278,7 @@
           <file leaf-file-name="ExpressionBuilderTest.groovy" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/ExpressionBuilderTest.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="82" column="9" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="e#43#105#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ExpressionExtensions.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/ExpressionExtensions.groovy">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="e#49#100#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Expression.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/Expression.groovy">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="5" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="e#43#89#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AndFunction.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/AndFunction.groovy">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="19" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+                <state line="71" column="52" selection-start="2080" selection-end="2080" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -196,84 +288,55 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ConditionalExpression.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/ConditionalExpression.groovy">
+          <file leaf-file-name="DomainModelBuilder.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainModelBuilder.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="5" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+                <state line="12" column="0" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BinaryExpression.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/BinaryExpression.groovy">
+          <file leaf-file-name="FactoryBuilderSupport.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="jar://$M2_REPO$/Users/chris.edwards/.gradle/caches/artifacts-26/filestore/org.codehaus.groovy/groovy-all/2.1.6/source/d3b861ec887a4abd351052edca7fbacdc8b9ddbd/groovy-all-2.1.6-sources.jar!/groovy/util/FactoryBuilderSupport.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="e#43#108#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BinaryFunction.groovy" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/BinaryFunction.groovy">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="58" selection-start="565" selection-end="565" vertical-scroll-proportion="0.49462366">
+                <state line="50" column="61" selection-start="1880" selection-end="1881" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AddFunction.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/AddFunction.groovy">
+          <file leaf-file-name="DomainRelationship.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainRelationship.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="5" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+                <state line="7" column="27" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SubtractFunction.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/SubtractFunction.groovy">
+          <file leaf-file-name="DomainModel.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainModel.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="24" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+                <state line="5" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DivideFunction.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/DivideFunction.groovy">
+          <file leaf-file-name="DomainAssertions.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/DomainAssertions.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="5" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+                <state line="6" column="13" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MultiplyFunction.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/MultiplyFunction.groovy">
+          <file leaf-file-name="ExpressionAssertions.groovy" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/ExpressionAssertions.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="5" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="OrFunction.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/OrFunction.groovy">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="18" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="NotFunction.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/NotFunction.groovy">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="6" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+                <state line="8" column="21" selection-start="301" selection-end="301" vertical-scroll-proportion="0.10159652">
                   <folding />
                 </state>
               </provider>
@@ -288,25 +351,33 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/functions/FunctionRegistryTest.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/FunctionRegistry.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/ExpressionBuilder.groovy" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/services/org.codehaus.groovy.runtime.ExtensionModule" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/ExpressionExtensions.groovy" />
-        <option value="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/ExpressionBuilderTest.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/ConditionalExpression.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/BinaryFunction.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/AddFunction.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/Function.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/AndFunction.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/BinaryExpression.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/DivideFunction.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/MultiplyFunction.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/OrFunction.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/SubtractFunction.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/ExpressionExtensions.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/generators/SqlExpressionGenerator.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/generators/SqlExpressionGeneratorTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainRelationship.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainClass.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainProperty.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainPropertyTest.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainClassTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainModelBuilder.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainModel.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/TypeAssertions.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/ExpressionBuilderTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/DomainAssertions.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/ExpressionAssertions.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainModelBuilderTest.groovy" />
       </list>
     </option>
   </component>
@@ -315,24 +386,24 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state />
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -351,7 +422,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -456,7 +526,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="generators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expressions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="functions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domainmodel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,12 +680,111 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expressions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expressions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="functions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calcengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domainmodel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -560,14 +793,15 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Groovy" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$M2_REPO$/Projects/CodeNarc/CodeNarc.ipr" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -575,12 +809,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="spock.lang.Specification" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.shiloh.calcengine.domainmodel" />
+      <recent name="com.shiloh.calcengine.expressions.generators" />
       <recent name="com.shiloh.calcengine.nodes.functions" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shiloh.calcengine.expressions.functions" />
       <recent name="com.shiloh.calcengine.nodes.functions" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -785,18 +1023,21 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
     <option name="LAST_MERGED_REVISION" />
-    <option name="UPDATE_RUN_STATUS" value="false" />
     <option name="MERGE_DRY_RUN" value="false" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -808,13 +1049,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -825,11 +1065,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14674494" sideWeight="0.7821782" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21782178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14674494" sideWeight="0.7838126" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21618743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.78327835" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -898,125 +1139,115 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/ExpressionExtensions.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#49#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/ExpressionBuilderTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="9" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#43#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/ConditionalExpression.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="5" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/Expression.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#43#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/Function.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/functions/FunctionRegistryTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#53#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/DivideFunction.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/MultiplyFunction.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/OrFunction.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="18" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/SubtractFunction.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/AddFunction.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/NotFunction.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/BinaryExpression.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#43#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/BinaryFunction.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="58" selection-start="565" selection-end="565" vertical-scroll-proportion="0.49462366">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/functions/AndFunction.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+        <state line="15" column="18" selection-start="304" selection-end="341" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/ExpressionBuilder.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="334" selection-end="334" vertical-scroll-proportion="0.23192771">
+        <state line="6" column="6" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$M2_REPO$/Users/chris.edwards/.gradle/caches/artifacts-26/filestore/org.codehaus.groovy/groovy-all/2.1.6/source/d3b861ec887a4abd351052edca7fbacdc8b9ddbd/groovy-all-2.1.6-sources.jar!/groovy/util/FactoryBuilderSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="61" selection-start="1880" selection-end="1881" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainRelationship.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="27" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainClass.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="58" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainPropertyTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="43" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainModelBuilder.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainModel.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/functions/FunctionTestBase.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="15" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/domainmodel/DomainProperty.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="42" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$project_jdk_name$/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="17" selection-start="4208" selection-end="4208" vertical-scroll-proportion="1.7894737" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainClassTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="53" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/expressions/ExpressionBuilderTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="52" selection-start="2080" selection-end="2080" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/DomainAssertions.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/shiloh/calcengine/expressions/utils/ExpressionAssertions.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="301" selection-end="301" vertical-scroll-proportion="0.10159652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/shiloh/calcengine/domainmodel/DomainModelBuilderTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="72" selection-start="2350" selection-end="2350" vertical-scroll-proportion="1.341074">
+          <folding>
+            <element signature="e#43#106#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

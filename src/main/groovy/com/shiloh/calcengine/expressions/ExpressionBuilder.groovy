@@ -1,5 +1,6 @@
 package com.shiloh.calcengine.expressions
 
+import com.shiloh.calcengine.expressions.functions.BinaryFunction
 import com.shiloh.calcengine.expressions.functions.FunctionRegistry
 
 
@@ -14,7 +15,12 @@ class ExpressionBuilder extends BuilderSupport {
 	@Override
 	protected Object createNode(Object name) {
 		def function = functionRegistry.findByName(name)
-		if (function) return new FunctionExpression(function)
+		if (function) {
+			if (function instanceof BinaryFunction) {
+				return new BinaryExpression(function)
+			}
+			return new FunctionExpression(function)
+		}
 
 		throw new RuntimeException("Builder method not implemented for createNode( $name )")
 	}

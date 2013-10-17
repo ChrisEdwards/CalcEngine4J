@@ -22,11 +22,11 @@ abstract class Expression {
 		children << child
 	}
 
-	void visit(ExpressionVisitor visitor) {
+	void visit(visitor) {
 		visitor.visit(this)
 	}
 
-	void visitChildren(ExpressionVisitor visitor) {
+	void visitChildren(visitor) {
 		children.each { it.visit(visitor) }
 	}
 

@@ -8,7 +8,11 @@ class BinaryExpression extends Expression {
 
 	BinaryFunction function
 
-	BinaryExpression(Expression leftExpression, Expression rightExpression, Function function) {
+	BinaryExpression(BinaryFunction function) {
+		this.function = function
+	}
+
+	BinaryExpression(Expression leftExpression, Expression rightExpression, BinaryFunction function) {
 		addChild(leftExpression)
 		addChild(rightExpression)
 		this.function = function

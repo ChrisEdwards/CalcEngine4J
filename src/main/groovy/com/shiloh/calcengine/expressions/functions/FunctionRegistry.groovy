@@ -15,10 +15,16 @@ class FunctionRegistry {
 		add new OrFunction()
 		add new NotFunction()
 		add new RoundFunction()
+		add new EqualFunction()
+		add new NotEqualFunction()
+		add new GreaterThanFunction()
+		add new GreaterThanOrEqualFunction()
+		add new LessThanFunction()
+		add new LessThanOrEqualFunction()
 	}
 
 	Function findByName(String name) {
-		functions[name]
+		functions[name.toLowerCase()]
 	}
 
 	private static String getFunctionName(Function func) {

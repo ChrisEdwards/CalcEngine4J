@@ -3,12 +3,18 @@ package com.shiloh.calcengine.expressions
 import com.shiloh.calcengine.expressions.functions.AddFunction
 import com.shiloh.calcengine.expressions.functions.AndFunction
 import com.shiloh.calcengine.expressions.functions.DivideFunction
+import com.shiloh.calcengine.expressions.functions.EqualFunction
+import com.shiloh.calcengine.expressions.functions.GreaterThanFunction
+import com.shiloh.calcengine.expressions.functions.GreaterThanOrEqualFunction
+import com.shiloh.calcengine.expressions.functions.LessThanFunction
+import com.shiloh.calcengine.expressions.functions.LessThanOrEqualFunction
 import com.shiloh.calcengine.expressions.functions.MultiplyFunction
+import com.shiloh.calcengine.expressions.functions.NotEqualFunction
 import com.shiloh.calcengine.expressions.functions.NotFunction
 import com.shiloh.calcengine.expressions.functions.OrFunction
 import com.shiloh.calcengine.expressions.functions.RoundFunction
 import com.shiloh.calcengine.expressions.functions.SubtractFunction
-import com.shiloh.calcengine.expressions.utils.ExpressionExtensions
+import com.shiloh.calcengine.expressions.utils.ExpressionAssertions
 import org.junit.Before
 import spock.lang.Specification
 
@@ -32,8 +38,8 @@ class ExpressionBuilderTest extends Specification {
 		}
 
 		then:
-		use(ExpressionExtensions) {
-			expression.assertIsFunction(AddFunction)
+		use(ExpressionAssertions) {
+			expression.assertIsBinaryExpression(AddFunction)
 			expression.children[0].assertIsLiteral(1)
 			expression.children[1].assertIsLiteral(2)
 		}
@@ -60,12 +66,12 @@ class ExpressionBuilderTest extends Specification {
 		}
 
 		then:
-		use(ExpressionExtensions) {
-			def root = expression.assertIsFunction(AddFunction)
-			def multiply = root.children[0].assertIsFunction(MultiplyFunction)
+		use(ExpressionAssertions) {
+			def root = expression.assertIsBinaryExpression(AddFunction)
+			def multiply = root.children[0].assertIsBinaryExpression(MultiplyFunction)
 			def round = multiply.children[0].assertIsFunction(RoundFunction)
-			def subtract = multiply.children[1].assertIsFunction(SubtractFunction)
-			def divide = root.children[1].assertIsFunction(DivideFunction)
+			def subtract = multiply.children[1].assertIsBinaryExpression(SubtractFunction)
+			def divide = root.children[1].assertIsBinaryExpression(DivideFunction)
 		}
 	}
 
@@ -83,10 +89,43 @@ class ExpressionBuilderTest extends Specification {
 		}
 
 		then:
-		use(ExpressionExtensions) {
-			def and = expression.assertIsFunction(AndFunction)
+		use(ExpressionAssertions) {
+			def and = expression.assertIsBinaryExpression(AndFunction)
 			def not = and.children[0].assertIsFunction(NotFunction)
-			def or = and.children[1].assertIsFunction(OrFunction)
+			def or = and.children[1].assertIsBinaryExpression(OrFunction)
+		}
+	}
+
+	def "should be able to build comparison operators"() {
+		when:
+		expression = builder.equal() {
+			greaterThan {
+				greaterThanOrEqual {
+					literal 1
+					literal 1
+				}
+				notEqual {
+					literal 1
+					literal 1
+				}
+			}
+			lessThan {
+				lessThanOrEqual {
+					literal 1
+					literal 1
+				}
+				literal 1
+			}
+		}
+
+		then:
+		use(ExpressionAssertions) {
+			def eq = expression.assertIsBinaryExpression(EqualFunction)
+			def gt = eq.children[0].assertIsBinaryExpression(GreaterThanFunction)
+			def ge = gt.children[0].assertIsBinaryExpression(GreaterThanOrEqualFunction)
+			def ne = gt.children[1].assertIsBinaryExpression(NotEqualFunction)
+			def lt = eq.children[1].assertIsBinaryExpression(LessThanFunction)
+			def le = lt.children[0].assertIsBinaryExpression(LessThanOrEqualFunction)
 		}
 	}
 }
