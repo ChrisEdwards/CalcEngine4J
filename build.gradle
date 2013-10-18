@@ -1,15 +1,57 @@
-apply plugin: 'idea'
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
+apply from: file('gradle/idea.gradle')
+
+ext.antlr = [
+		grammarpackage: "com.shiloh.calcengine.antlr",
+		antlrSource: 'src/main/antlr',
+		destinationDir: "src/generated-sources/java"
+]
 
 repositories {
     mavenCentral()
+}
+
+configurations {
+	antlr4 {
+		description = "ANTLR4"
+	}
 }
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.1.6'
 	compile 'joda-time:joda-time:2.3'
 	compile 'org.apache.commons:commons-lang3:3.1'
+	compile 'org.antlr:antlr4-runtime:4.1'
+	antlr4 'org.antlr:antlr4:4.1'
     testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
 	testCompile 'org.fluttercode.datafactory:datafactory:0.8'
+}
+
+task antlrOutputDir << {
+	mkdir(antlr.destinationDir)
+}
+
+task generateGrammarSource(dependsOn: antlrOutputDir, type: JavaExec) {
+	description = 'Generates Java sources from ANTLR4 grammars.'
+
+	inputs.dir file(antlr.antlrSource)
+	outputs.dir file(antlr.destinationDir)
+
+	def grammars = fileTree(antlr.antlrSource).include('**/*.g4')
+
+	main = 'org.antlr.v4.Tool'
+	classpath = configurations.antlr4
+	def pkg = antlr.grammarpackage.replaceAll("\\.", "/")
+	args = ["-o", "${antlr.destinationDir}/${pkg}"/*, "-atn"*/, "-visitor", "-package", antlr.grammarpackage, grammars.files].flatten()
+
+}
+
+compileJava {
+	dependsOn generateGrammarSource
+	source antlr.destinationDir
+}
+
+clean {
+	delete antlr.destinationDir
 }
