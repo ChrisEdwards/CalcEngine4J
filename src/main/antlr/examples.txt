@@ -1,1 +1,132 @@
-(1 + 2 * ( 3 - 6) > 100) && 1
+Summary.NumLargeAccounts = Count(Institution.Accounts[Balance > 100]);
+
+class Account
+{
+	property AccountId primarykey;
+	
+	property AccountHolderId;
+	property InstitutionId;	
+	
+    //relationship Institution = Institution where InstitutionId == this.InstitutionId;
+    //relationship AccountHolder = AccountHolder where AccountHolderId == this.AccountHolderId;
+}
+
+/* Testing 
+   Multiline
+   Comments */
+class Cycle
+{
+	property CycleId primarykey;
+	
+	property StartDate;
+	property EndDate;
+}
+
+class DailyTransactionSummary
+{
+	property Date;
+	property AccountId;
+	property TransactionTypeId;
+	
+	property TransactionCount;
+	property TransactionAmount;
+}
+
+class DailyAccountFeeEligibility
+{	
+	property Date;
+	property AccountId;	
+	property FeeTypeId;
+	
+	property IsEligibleForFeeType calculated;
+	
+	relationship FeeConfiguration = MonthlyFeeConfiguration where AccountId == this.AccountId
+															  and FeeTypeId == this.FeeTypeId
+															  and this.Date >= Cycle.StartDate
+															  and this.Date <= Cycle.EndDate;
+}
+
+class CycleAccount
+{
+	property CycleAccountId primarykey;
+	
+	property CycleId;
+	property AccountId;
+	
+	property IsActive calculated;
+	property IsNew calculated;
+	property IsSwitched calculated;
+	property Branch calculated;
+	
+	relationship Account = Account where AccountId == this.AccountId;
+	relationship Cycle = Cycle where CycleId == this.CycleId;
+	relationship DailyTransactionSummariesForCycle = DailyTransactionSummary where AccountId == this.AccountId 
+	                                                  and Date >= this.Cycle.StartDate
+	                                                  and Date <= this.Cycle.EndDate;
+}
+
+MonthlyFeeConfiguration.HasFee = 
+	if( FeeAmount > 0 or FeePercentage > 0
+		 , 1
+		 , 0 );
+		 
+MonthlyFeeConfiguration.HasDuration = 
+	if( FeeDuration > 0 
+		, 1
+		, 0 );
+
+
+
+
+
+// Determin what days the account is eligible for fees by type.
+DailyAccountFeeEligibility.IsEligibleForFeeType = this.FeeConfiguration.HasFee;
+
+
+
+// POS Fee calculation
+MonthlyAccountPosFeeHistory.PosTransactionCount = Count( this.CycleAccount.DailyTransactionSummariesForCycle[ DailyAccountFeeEligibility == true ] );
+MonthlyAccountPosFeeHistory.TotalFeeAmount = Total;
+
+
+
+class MonthlyFeeConfiguration
+{
+	property MonthlyFeeConfigurationId primarykey;
+	
+	property CycleId;
+	property ProductId;
+	property FeeTypeId;
+	
+	property FeeAmount;
+	property FeePercentage;
+	property FeeCalculationMethod;
+	property FeeDuration;
+	
+	property HasFee calculated;
+	property HasDuration calculated;
+	
+	relationship Cycle = Cycle where CycleId == this.CycleId;
+}
+
+class MonthlyAccountFeeHistory
+{
+	property MonthlyAccountFeeHistoryId primarykey;
+	
+	property CycleId;
+	property AccountId;
+	property FeeTypeId;
+	
+	property TotalFeeAmount calculated abstract;
+	
+	//relationship BillingCycle = BillingCycle where BillingCycleId == this.BillingCycleId;
+	relationship Account = Account where AccountId == this.AccountId;
+	relationship CycleAccount = CycleAccount where AccountId == this.AccountId and CycleId == this.CycleId;
+}
+
+class MonthlyAccountPosFeeHistory : MonthlyAccountFeeHistory where FeeTypeId == 8
+{
+	property TotalEligiblePosTransactionCount;
+
+	//relationship EligiblePosTransactions = 	
+}
