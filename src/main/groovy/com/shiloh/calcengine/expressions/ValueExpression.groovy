@@ -1,5 +1,7 @@
 package com.shiloh.calcengine.expressions
 
+import com.shiloh.calcengine.exceptions.ChildNotAllowedException
+
 
 abstract class ValueExpression extends Expression {
 

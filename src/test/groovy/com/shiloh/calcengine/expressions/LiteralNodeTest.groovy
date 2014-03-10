@@ -1,5 +1,6 @@
 package com.shiloh.calcengine.expressions
 
+import com.shiloh.calcengine.exceptions.ChildNotAllowedException
 import spock.lang.Specification
 
 
